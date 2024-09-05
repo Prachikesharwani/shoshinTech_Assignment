@@ -1,0 +1,54 @@
+@import "../../global.css";
+.container{
+    padding: 8px 45px;
+}
+.container p{
+    text-align: left;
+    font-size: 24px;
+    font-weight: 500;
+    color: #161E54;
+    font-family: var(--title-small);
+}
+.contents{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 18px;
+}
+.content{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+.rightContent{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+.items{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+}
+
+@media screen and (max-width: 834px) {
+  .container{
+    padding: 8px 35px;
+}
+  .contents{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.rightContent{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+}
+}

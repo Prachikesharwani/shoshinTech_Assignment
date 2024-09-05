@@ -1,0 +1,146 @@
+@import "../../global.css";
+  .announcement {
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid var(--color-gainsboro);
+    width: 420px;
+    height: 434px;
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+    font-family: var(--title-small);
+    padding: 0 10px;
+  }
+  
+  .mainContent {
+    padding: 20px 10px;
+    flex-grow: 1;
+    overflow-y: scroll; 
+    margin-bottom: 10px;
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
+  }
+  
+  .mainContent::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .heading select {
+    width: 145px;
+    height: 27px;
+    border: 1px solid var(--color-gainsboro);
+    border-radius: 4px;
+  }
+  
+  .heading select option {
+    font-size: 12px;
+  }
+  
+  .items {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 6px;
+  }
+  .items p{
+    font-size: 12px;
+    margin: 0;
+    text-align: left;
+  }
+  .item {
+    padding: 5px;
+    border: 1px solid var(--color-gainsboro);
+    width: 387px;
+    height: 64px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  
+  .info p {
+    font-size: 16px;
+    line-height: 17px;
+    margin: 0; 
+  }
+  
+  .info span {
+    font-size: 10px;
+    margin-top: 4px; 
+  }
+  
+  .action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+    position: relative; 
+  }
+  
+  .dropdown {
+    position: absolute;
+    top: 100%; 
+    right: 0;
+    background-color: #fff;
+    border: 1px solid var(--color-gainsboro);
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100px;
+    z-index: 1000; 
+  }
+  
+  .dropdown p {
+    margin: 0;
+    padding: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .dropdown p:hover {
+    background-color: var(--color-gainsboro);
+  }
+  
+  
+  .footer {
+    height: 39px;
+    border-top: 1px solid var(--color-gainsboro);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute; 
+    bottom: 0; 
+    left: 0;
+    width: 100%; 
+    background-color: #fff; 
+  }
+  
+  .footer p {
+    font-size: 14px;
+    color: #FF5151;
+    margin: 0; 
+    cursor: pointer;
+  }
+  
+  @media screen and (max-width: 834px) {
+    .announcement{
+      height: 351px;
+      width: 364px;
+    }
+  }

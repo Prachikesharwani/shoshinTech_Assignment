@@ -1,0 +1,37 @@
+@import "../../../global.css";
+.dashboardItem {
+    border-radius: 10px;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    width: 204px;
+    height: 136px;
+  }
+  
+  .dashboardItem h3 {
+    font-family: var(--title-small);
+    font-size: 18px;
+    color: #161E54;
+    font-weight: 500;
+    margin: 4px 0;
+  }
+  
+  .dashboardItem p {
+    font-family: var( --title-small);
+    margin: 4px 0;
+    font-size: 46px;
+    color: #161E54;
+    font-weight: 500;
+  }
+  
+  .dashboardItem span {
+    margin: 4px 0;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: var(--subtitle-small);
+  }
+  
+  @media screen and (max-width: 834px) {
+    .dashboardItem{
+      width: 179px;
+    }
+  }

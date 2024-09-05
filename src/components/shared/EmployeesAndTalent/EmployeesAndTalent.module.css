@@ -1,0 +1,65 @@
+@import "../../../global.css";
+.employeesItem {
+  background: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  border: 1px solid var(--color-gainsboro);
+  margin-bottom: 20px;
+  width: 331px;
+  height: 190px;
+}
+.employeesItem p{
+  margin: 4px 0;
+  font-size: 18px;
+  font-family: var(--title-small);
+}
+.contents {
+  padding-left: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.content p{
+  font-size: 48px;
+  font-family: var(--title-small);
+}
+.subtitles{
+  display: flex;
+  flex-direction: column;
+}
+.subtitles span{
+  margin: 2px;
+  font-size: 12px;
+  font-family: var(  --subtitle-small);
+}
+.graph{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.graph span{
+  font-family: var(--font-rubik);
+}
+.percent{
+  background-color: #FFEFE7;
+  width:107px ;
+  height:24px ;
+  border-radius: 4px;
+  padding: 7px;
+  margin: 10px;
+  font-size: 12px;
+  font-family: var( --subtitle-small);
+  text-align: center;
+}
+
+@media screen and (max-width: 834px) {
+  .employeesItem{
+    width: 305px;
+  }
+}

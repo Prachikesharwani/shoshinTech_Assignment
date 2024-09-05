@@ -1,0 +1,117 @@
+@import "../../global.css";
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 45px;
+  height: 75px;
+  border-bottom: 1px solid #F1F1F1;
+  font-family: var(--title-small);
+}
+
+.searchInput {
+  position: relative;
+  width: 343px;
+}
+
+.searchInput input {
+  width: 100%;
+  border-radius: var(--br-9xs);
+  background-color: var(--background-color);
+  border: 1px solid var(--color-gainsboro);
+  box-sizing: border-box;
+  padding: var(--padding-3xs) var(--padding-base);
+  padding-right: 40px;
+  cursor: pointer;
+}
+
+.searchInput img {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  object-fit: cover;
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+  gap: var(--gap-11xl);
+  cursor: pointer;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  white-space: nowrap;
+  position: relative; 
+}
+
+.profile span {
+  margin: 5px;
+}
+
+.avatar {
+  width: 42px;
+  height: 42px;
+}
+
+.dropdownIcon {
+  width: 12px;
+  height: 12px;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger img {
+  width: 24px;
+  height: 24px;
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+  z-index: 1000; 
+}
+
+.dropdownMenu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdownMenu li {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.dropdownMenu li:hover {
+  background-color: #f0f0f0;
+}
+
+@media screen and (max-width: 834px) {
+  .header {
+    padding: 5px 55px;
+  }
+  .hamburger {
+    display: block;
+    margin-right: 15px;
+  }
+  .searchInput {
+    width: auto;
+  }
+}

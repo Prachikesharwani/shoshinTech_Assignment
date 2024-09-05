@@ -1,0 +1,114 @@
+@import "../../global.css";
+.sidebar {
+  width: 242px;
+  background-color: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding-xl);
+  transition: transform 0.3s ease, width 0.3s ease;
+  position: relative;
+  font-family: var( --title-small);
+}
+
+.logo {
+  text-decoration: none;
+  height: 62px;
+  width: 100%;
+  padding: var(--padding-3xs);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo span {
+  font-size: 26px;
+  font-weight: 800;
+  color: #0A337A;
+  margin: 7px;
+}
+
+.menuItems {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+  font-size: var(--title-small-size);
+  color: var(--secondary-subtitle-color);
+  font-family: var(--title-small);
+}
+
+.menuItems p {
+  margin-top: 15px;
+  font-size: var(--body-small-size);
+  font-family: var(--subtitle-small);
+  color: #686868;
+}
+
+.menuItems nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.menuItems nav ul li {
+  display: flex;
+  align-items: center;
+  padding: var(--padding-base) 0;
+  gap: var(--gap-5xl);
+  cursor: pointer;
+}
+
+.menuItems nav ul li span {
+  margin: 5px;
+}
+
+.active{
+  color: #FF5151;
+}
+
+.closeIcon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.closeIcon img {
+  width: 16px;
+  height: 16px;
+}
+
+@media screen and (max-width: 834px) {
+  .sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 75px; 
+    transition: width 0.3s ease;
+    z-index: 1000;
+  }
+
+  .sidebar.expanded {
+    width: 242px; 
+  }
+
+  .sidebar:not(.expanded) nav ul li span {
+    display: none; 
+  }
+
+  .sidebar:not(.expanded) .logo span {
+    display: none; 
+  }
+
+  .menuItems nav ul li {
+    justify-content: center; 
+  }
+
+  .menuItems nav ul li img {
+    margin-right: 0;
+  }
+}

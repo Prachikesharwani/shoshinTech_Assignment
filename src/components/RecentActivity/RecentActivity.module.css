@@ -1,0 +1,71 @@
+@import "../../global.css";
+.recentActivity {
+  font-family: var(-title-small);
+  background-color: #161e54;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 10px;
+  width: 405px;
+  height: 278px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.recentActivity h3 {
+  background-color: #1b204a;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.details {
+  background-color: #161e54;
+  color: #fff;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-top: 15px;
+}
+.details span {
+  font-size: 10px;
+  line-height: 8px;
+}
+.details h2 {
+  font-size: 18px;
+  line-height: 10px;
+}
+.details p {
+  font-size: 14px;
+  color: #fff;
+}
+.action {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 35px;
+  background-color: #161e54;
+}
+.action p {
+  color: #fff;
+  font-size: 14px;
+}
+.action button {
+  padding: 10px 15px;
+  background-color: #ff4d4f;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 834px) {
+  .recentActivity{
+    height: 319px;
+    width: 250px;
+  }
+}
